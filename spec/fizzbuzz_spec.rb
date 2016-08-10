@@ -1,55 +1,33 @@
 require_relative '../lib/fizzbuzz'
 
 describe 'fizzbuzz' do
-  it 'returns 1 when passed 1' do
+  it 'returns number when passed non-multiple of 3 and 5' do
     expect(fizzbuzz(1)).to eq 1
-  end
-end
-
-describe 'fizzbuzz' do
-  it 'returns "fizz" when passed 3' do
-    expect(fizzbuzz(3)).to eq 'fizz'
-  end
-end
-
-describe 'fizzbuzz' do
-  it 'returns 4 when passed 4' do
     expect(fizzbuzz(4)).to eq 4
-  end
-end
-
-describe 'fizzbuzz' do
-  it 'returns "buzz" when passed 5' do
-    expect(fizzbuzz(5)).to eq 'buzz'
-  end
-end
-
-describe 'fizzbuzz' do
-  it 'returns "fizz" when passed 6' do
-    expect(fizzbuzz(6)).to eq 'fizz'
-  end
-end
-
-describe 'fizzbuzz' do
-  it 'returns "buzz" when passed 10' do
-    expect(fizzbuzz(10)).to eq 'buzz'
-  end
-end
-
-describe 'fizzbuzz' do
-  it 'returns "fizzbuzz" when passed 15' do
-    expect(fizzbuzz(15)).to eq 'fizzbuzz'
-  end
-end
-
-describe 'fizzbuzz' do
-  it 'returns 31 when passed 31' do
     expect(fizzbuzz(31)).to eq 31
   end
 end
 
 describe 'fizzbuzz' do
-  it 'returns "fizzbuzz" when passed 45' do
+  it 'returns "fizz" when passed multiples of 3' do
+    expect(fizzbuzz(3)).to eq 'fizz'
+    expect(fizzbuzz(6)).to eq 'fizz'
+    expect(fizzbuzz(18)).to eq 'fizz'
+  end
+end
+
+describe 'fizzbuzz' do
+  it 'returns "buzz" when passed multiples of 5' do
+    expect(fizzbuzz(5)).to eq 'buzz'
+    expect(fizzbuzz(10)).to eq 'buzz'
+    expect(fizzbuzz(25)).to eq 'buzz'
+  end
+end
+
+describe 'fizzbuzz' do
+  it 'returns "fizzbuzz" when passed multiples of 15' do
+    expect(fizzbuzz(15)).to eq 'fizzbuzz'
+    expect(fizzbuzz(30)).to eq 'fizzbuzz'
     expect(fizzbuzz(45)).to eq 'fizzbuzz'
   end
 end
