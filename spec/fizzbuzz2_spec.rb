@@ -6,25 +6,19 @@ describe 'fizzbuzz' do
     expect(4.fizzbuzz).to eq 4
     expect(31.fizzbuzz).to eq 31
   end
-end
 
-describe 'fizzbuzz' do
   it 'returns "fizz" when passed 3' do
     expect(3.fizzbuzz).to eq 'fizz'
     expect(6.fizzbuzz).to eq 'fizz'
     expect(18.fizzbuzz).to eq 'fizz'
   end
-end
 
-describe 'fizzbuzz' do
   it 'returns "buzz" when passed 5' do
     expect(5.fizzbuzz).to eq 'buzz'
     expect(10.fizzbuzz).to eq 'buzz'
     expect(25.fizzbuzz).to eq 'buzz'
   end
-end
 
-describe 'fizzbuzz' do
   it 'returns "fizzbuzz" when passed 15' do
     expect(15.fizzbuzz).to eq 'fizzbuzz'
     expect(30.fizzbuzz).to eq 'fizzbuzz'
